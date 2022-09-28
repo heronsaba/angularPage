@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: white;
+}
+
+#hat{
+    font-size: 100px;
+    padding: 20px;
+}
+#wand{
+    font-size: 20px;
+}
+.container h2 {
+    font-size: 44px;
+}
+.container h3 {
+    font-size: 20px;
+}

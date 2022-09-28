@@ -1,0 +1,30 @@
+.search-form{
+    height: 44px;
+    display: flex;
+}
+
+.search-form input{
+    box-sizing: border-box;
+    width: 600px;
+    border-radius: 4px;
+    padding: 12px;
+    flex:1;
+    background-color: #fff;
+    color: var(--gray);
+    border: none;
+    transition: all -3s ease-in-out;
+    font-size: 18px;
+}
+.search-form button{
+    border-radius: 4px;
+    width: 56px;
+    height: 44px;
+    border:none;
+    background-color: #fefae3;
+    color: #CDA47A;
+    font-size: 22px;
+}
+
+.search-form button:hover{
+    cursor: pointer;
+}

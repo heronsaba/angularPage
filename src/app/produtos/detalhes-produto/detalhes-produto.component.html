@@ -1,0 +1,18 @@
+<section class="product__container">
+    <div class="product-image__container">
+        <img [src]="produto?.imagem" alt="">
+    </div>
+    <div class="product-description__container">
+        <h2 class="product__name">{{produto?.descricao}}</h2>
+        <h3 class="product__price">{{produto?.preco | currency:"BRL"}}</h3>
+        <label for="">
+            Quantidade:
+            <input min="1" type="number" [(ngModel)] = "quantidade" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            unidade(s)
+        </label>
+        <h3>Sobre:</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt molestias voluptate ratione rem, vel deserunt! Error voluptatibus suscipit ipsa consectetur hic, asperiores laboriosam mollitia corrupti incidunt unde natus amet.</h4>
+        <button routerLink="/produtos" (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+        <button class="home" routerLink="/produtos">Voltar para loja</button>
+    </div>
+</section>

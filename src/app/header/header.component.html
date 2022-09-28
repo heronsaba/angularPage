@@ -1,0 +1,25 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <a href="#">Valinor Books</a>
+    </h1>
+    <app-barra-pesquisa></app-barra-pesquisa>
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="carrinho">
+                        <span class="badge-carrinho"><i class="fa-solid fa-cart-shopping"></i> Carrinho {{carrinhoService.obtemCarrinho().length}}</span>
+                    </a>
+                </li>
+                <li><a class="items" routerLink="contato">Contato</a></li>
+                <li><a><i class="social-media fa-brands fa-facebook"></i></a></li>
+                <li><a><i class="social-media fa-brands fa-instagram"></i></a></li>
+                <li><a><i class="social-media fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
